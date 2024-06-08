@@ -16,21 +16,18 @@ function App() {
       key: "name",
       title: "Name",
       dataIndex: "name",
-      defaultSortOrder: "descend",
       sorter: (a, b) => a.name.localeCompare(b.name), // Sort by name
     },
     {
       key: "favoriteFood",
       title: "Favorite Food",
       dataIndex: "favoriteFood",
-      defaultSortOrder: "descend",
       sorter: (a, b) => a.favoriteFood.localeCompare(b.favoriteFood), // Sort by favorite food
     },
     {
       key: "favoriteMovie",
       title: "Favorite Movie",
       dataIndex: "favoriteMovie",
-      defaultSortOrder: "descend",
       sorter: (a, b) => a.favoriteMovie.localeCompare(b.favoriteMovie), // Sort by favorite movie
     },
     {
@@ -55,7 +52,6 @@ function App() {
       key: "lastUpdated",
       title: "Last Updated",
       dataIndex: "lastUpdated",
-      defaultSortOrder: "descend",
       sorter: (a, b) => a.lastUpdated!.localeCompare(b.lastUpdated!), // Sort by last updated date
     },
   ];
